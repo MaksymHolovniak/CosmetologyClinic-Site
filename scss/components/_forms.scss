@@ -1,0 +1,52 @@
+.form {
+  &__text {
+    max-width: 280px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto 32px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 16px 32px;
+    border: 1px solid var(--color-secondary-light);
+    border-radius: 32px;
+    font-size: 13px;
+    color: #fff;
+    background-color: transparent;
+    line-height: 1.15;
+
+    &::placeholder {
+      color: #fff;
+      line-height: 1.15;
+      font-size: 13px;
+    }
+
+    &:focus {
+      background-color: var(--color-secondary-light);
+    }
+  }
+
+  &__button {
+    margin: 0 auto 8px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__terms {
+    max-width: 205px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-secondary-light);
+
+    &-link {
+      color: var(--color-secondary-light);
+      text-decoration: underline;
+    }
+  }
+}

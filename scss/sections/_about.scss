@@ -1,0 +1,46 @@
+.about-section {
+  padding-top: 96px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__content {
+    padding: 40px 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    max-width: 530px;
+  }
+
+  &__text {
+    max-width: 650px;
+    font-size: 22px;
+    line-height: 1.73;
+  }
+
+  &__images {
+    position: relative;
+    width: 100%;
+  }
+
+  &__face-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+
+  &__face-after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+}
+

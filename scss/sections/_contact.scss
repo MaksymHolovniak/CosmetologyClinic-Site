@@ -1,0 +1,38 @@
+.contact-section {
+  padding: 48px 0 96px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__map {
+    width: 605px;
+    height: 480px;
+    border-radius: 32px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 56px;
+    align-items: center;
+    background-color: var(--color-primary-dark);
+    border-radius: 32px;
+    background-image: url("./../images/form-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+}

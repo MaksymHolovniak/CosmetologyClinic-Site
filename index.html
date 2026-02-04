@@ -10,7 +10,7 @@
       безкоштовна консультація косметолога."
     />
     <title>Косметологічна клініка Beauty Zone</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -277,8 +277,6 @@
               </ul>
               <div class="pagination">
                 <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
               </div>
             </div>
             <button class="carousel-button carousel-button__next" type="button">
@@ -298,15 +296,14 @@
           <div class="contact-section__container">
             <iframe
               title="Мапа косметологічної клініки Beauty Zone"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1769561828866!5m2!1sru!2sua"
-              width="605"
-              height="480"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="contact-section__form">
-              <p class="form-text">
+            <div class="contact-section__form form">
+              <p class="form__text">
                 Запишіться <span class="text-brand">безкоштовно</span> та
                 отримайте подарунок
               </p>
@@ -316,7 +313,7 @@
                     >Ваше ім'я та прізвище</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     id="contact-user-name"
                     name="user-name"
                     type="text"
@@ -329,7 +326,7 @@
                     >Ваш номер телефону</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="tel"
                     id="contact-user-phone"
                     name="user-phone"
@@ -342,7 +339,7 @@
                     >Ваша електронна пошта</label
                   >
                   <input
-                    class="form-input"
+                    class="form__input"
                     type="email"
                     id="contact-user-email"
                     name="user-email"
@@ -350,12 +347,12 @@
                     required
                   />
                 </div>
-                <button class="form-button main-button" type="submit">
+                <button class="form__button main-button" type="submit">
                   Записатись безкоштовно
                 </button>
-                <p class="form-terms">
+                <p class="form__terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-terms__link" href="#"
+                  <a class="form__terms-link" href="#"
                     >з політикою конфіденційності</a
                   >
                 </p>
@@ -380,22 +377,22 @@
             </div>
             <ul class="footer__menu">
               <li>
-                <a class="footer__address-link" href="#about-section"
+                <a class="footer__link" href="#about-section"
                   >Про нас</a
                 >
               </li>
               <li>
-                <a class="footer__address-link" href="#advantages-section"
+                <a class="footer__link" href="#advantages-section"
                   >Чому ми</a
                 >
               </li>
               <li>
-                <a class="footer__address-link" href="#procedures-section"
+                <a class="footer__link" href="#procedures-section"
                   >Наші процедури</a
                 >
               </li>
               <li>
-                <a class="footer__address-link" href="#contact-section"
+                <a class="footer__link" href="#contact-section"
                   >Контакти</a
                 >
               </li>
@@ -405,20 +402,20 @@
             <div class="footer__contacts">
               <ul class="footer__address-list">
                 <li>
-                  <a class="footer__address-link" href="tel:+380960000007"
+                  <a class="footer__link" href="tel:+380960000007"
                     >+ 38 (096) 000 00 07</a
                   >
                 </li>
                 <li>
                   <a
-                    class="footer__address-link"
+                    class="footer__link"
                     href="mailto:beautyzone@gmail.com"
                     >beautyzone@gmail.com</a
                   >
                 </li>
                 <li>
                   <a
-                    class="footer__address-link"
+                    class="footer__link"
                     href="https://maps.app.goo.gl/kxQNrpZhYX6VkEcx6"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -426,7 +423,7 @@
                   >
                 </li>
               </ul>
-              <ul class="footer__icons">
+              <ul class="footer__socials">
                 <li>
                   <a href="tel:+380960000007">
                     <svg class="footer__socials-icon" width="42" height="42">
@@ -451,7 +448,7 @@
               </ul>
             </div>
             <div class="footer__address-info">
-              <a class="footer__address-link" href="#"
+              <a class="footer__link" href="#"
                 >Політика конфіденційності</a
               >
               <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
@@ -469,18 +466,18 @@
           </svg>
         </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__text form-text">
-          Запишіться <span class="text-brand">безкоштовно</span> та отримайте
-          подарунок
-        </p>
-        <div class="modal__form">
+        <div class="modal__form form">
+          <p class="form__text">
+            Запишіться <span class="text-brand">безкоштовно</span> та отримайте
+            подарунок
+          </p>
           <form name="modal-form" autocomplete="off">
             <div class="modal__form-field">
               <label class="visually-hidden" for="contact-user-name"
                 >Ваше ім'я та прізвище</label
               >
               <input
-                class="form-input"
+                class="form__input"
                 id="contact-user-name"
                 name="user-name"
                 type="text"
@@ -493,7 +490,7 @@
                 >Ваш номер телефону</label
               >
               <input
-                class="form-input"
+                class="form__input"
                 type="tel"
                 id="contact-user-phone"
                 name="user-phone"
@@ -506,7 +503,7 @@
                 >Ваша електронна пошта</label
               >
               <input
-                class="form-input"
+                class="form__input"
                 type="email"
                 id="contact-user-email"
                 name="user-email"
@@ -514,12 +511,12 @@
                 required
               />
             </div>
-            <button class="form-button main-button" type="submit">
+            <button class="form__button main-button" type="submit">
               Записатись безкоштовно
             </button>
-            <p class="form-terms">
+            <p class="form__terms">
               Натискаючи на кнопку я погоджуюсь
-              <a class="form-terms__link" href="#"
+              <a class="form__terms-link" href="#"
                 >з політикою конфіденційності</a
               >
             </p>

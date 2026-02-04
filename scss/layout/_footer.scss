@@ -1,0 +1,87 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url("./../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    content: "";
+    width: 245px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("./../images/cosmetics-products.png");
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__logo {
+    flex-grow: 1;
+
+    &-image {
+      width: 82px;
+    }
+  }
+
+  &__menu,
+  &__contacts,
+  &__address-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__nav-link {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.19;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-icon {
+      fill: #fff;
+    }
+  }
+
+  &__address-copyright {
+    font-size: 13px;
+    line-height: 1.15;
+    color: var(--color-secondary-light);
+  }
+}

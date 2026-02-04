@@ -1,0 +1,38 @@
+.advantages-section {
+  padding: 176px 0 96px;
+
+  &__title {
+    max-width: 450px;
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 24px 32px;
+    border-radius: 32px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background-color: #fff;
+  }
+
+  &__text {
+    max-width: 252px;
+    text-align: center;
+    line-height: 1.33;
+  }
+
+  &__icon {
+    fill: var(--color-primary-light);
+  }
+}
+
