@@ -91,6 +91,9 @@ label {
 }
 
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -144,6 +147,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -179,6 +183,28 @@ body {
 
 .text-bold {
   font-weight: 600;
+}
+
+.big-star {
+  position: absolute;
+  top: 360px;
+  right: 350px;
+  fill: var(--color-primary-dark);
+}
+
+.middle-star {
+  position: absolute;
+  top: 30px;
+  right: -27px;
+  fill: var(--color-primary-light);
+  transform: rotate(45deg);
+}
+
+.little-star {
+  position: absolute;
+  top: 270px;
+  right: 6px;
+  fill: var(--color-secondary-light);
 }
 
 /* Form */
@@ -233,6 +259,26 @@ body {
 .form-terms__link {
   color: var(--color-secondary-light);
   text-decoration: underline;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.pagination__button {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-secondary-light);
+  border-radius: 50%;
+}
+
+.pagination__button--active {
+  background-color: var(--color-primary-light);
 }
 /* Header */
 
@@ -345,6 +391,7 @@ body {
   display: flex;
   gap: 32px;
 }
+
 .about-section__content {
   padding: 40px 0 200px;
   display: flex;
@@ -439,10 +486,11 @@ body {
   gap: 32px;
 }
 
+.procedures-section__container {
+  overflow: hidden;
+}
 .procedures-section__list {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
+  margin-bottom: 32px;
 }
 
 .procedure-card {
