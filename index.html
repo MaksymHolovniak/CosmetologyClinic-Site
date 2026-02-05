@@ -133,11 +133,19 @@
             <div class="about-section__images">
               <img
                 src="./images/woman-face-before.jpg"
+                srcset="
+                  ./images/woman-face-before.jpg    1x,
+                  ./images/woman-face-before@2x.jpg 2x
+                "
                 alt="Обличчя жінки до косметологічної процедури"
                 class="about-section__face-before"
               />
               <img
                 src="./images/woman-face-after.jpg"
+                srcset="
+                  ./images/woman-face-after.jpg    1x,
+                  ./images/woman-face-after@2x.jpg 2x
+                "
                 alt="Обличчя жінки після косметологічної процедури"
                 class="about-section__face-after"
               />
@@ -208,6 +216,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-mask-procedure.jpg"
+                      srcset="
+                        ./images/face-mask-procedure.jpg    1x,
+                        ./images/face-mask-procedure@2x.jpg 2x
+                      "
                       alt="Процедура нанесення маски на обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -221,6 +233,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-injection-procedure.jpg"
+                      srcset="
+                        ./images/face-injection-procedure.jpg    1x,
+                        ./images/face-injection-procedure@2x.jpg 2x
+                      "
                       alt="Процес проведення ін’єкції для обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -234,6 +250,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-cleansing-procedure.jpg"
+                      srcset="
+                        ./images/face-cleansing-procedure.jpg    1x,
+                        ./images/face-cleansing-procedure@2x.jpg 2x
+                      "
                       alt="Косметологічне очищення шкіри обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -247,6 +267,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-mask-procedure.jpg"
+                      srcset="
+                        ./images/face-mask-procedure.jpg    1x,
+                        ./images/face-mask-procedure@2x.jpg 2x
+                      "
                       alt="Процедура нанесення маски на обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -260,6 +284,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-injection-procedure.jpg"
+                      srcset="
+                        ./images/face-injection-procedure.jpg    1x,
+                        ./images/face-injection-procedure@2x.jpg 2x
+                      "
                       alt="Процес проведення ін’єкції для обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -273,6 +301,10 @@
                     <img
                       class="procedure-card__image"
                       src="./images/face-cleansing-procedure.jpg"
+                      srcset="
+                        ./images/face-cleansing-procedure.jpg    1x,
+                        ./images/face-cleansing-procedure@2x.jpg 2x
+                      "
                       alt="Косметологічне очищення шкіри обличчя"
                     />
                     <h3 class="procedure-card__title">
@@ -468,12 +500,12 @@
           </p>
           <form name="modal-form" autocomplete="off">
             <div class="modal__form-field">
-              <label class="visually-hidden" for="contact-user-name"
+              <label class="visually-hidden" for="modal-user-name"
                 >Ваше ім'я та прізвище</label
               >
               <input
                 class="form__input"
-                id="contact-user-name"
+                id="modal-user-name"
                 name="user-name"
                 type="text"
                 placeholder="Ваше ім'я та прізвище"
@@ -481,26 +513,26 @@
               />
             </div>
             <div class="modal__form-field">
-              <label class="visually-hidden" for="contact-user-phone"
+              <label class="visually-hidden" for="modal-user-phone"
                 >Ваш номер телефону</label
               >
               <input
                 class="form__input"
                 type="tel"
-                id="contact-user-phone"
+                id="modal-user-phone"
                 name="user-phone"
                 placeholder="Ваш номер телефону"
                 required
               />
             </div>
             <div class="modal__form-field">
-              <label class="visually-hidden" for="contact-user-email"
+              <label class="visually-hidden" for="modal-user-email"
                 >Ваша електронна пошта</label
               >
               <input
                 class="form__input"
                 type="email"
-                id="contact-user-email"
+                id="modal-user-email"
                 name="user-email"
                 placeholder="Ваша електронна пошта"
                 required

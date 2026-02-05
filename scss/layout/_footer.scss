@@ -26,9 +26,15 @@
       height: 100px;
       background-image: url("./../images/cosmetics-products.png");
       background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("./../images/cosmetics-products@2x.png");
+      }
     }
 
-     @media (min-width: utils.$bp-desktop) {
+    @media (min-width: utils.$bp-desktop) {
       width: 245px;
       height: 150px;
     }

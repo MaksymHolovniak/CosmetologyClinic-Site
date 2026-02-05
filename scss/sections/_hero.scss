@@ -20,6 +20,20 @@
     padding: 125px 0 125px 105px;
   }
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(
+        94deg,
+        #fff 9.65%,
+        rgba(255, 255, 255, 0.85) 26.08%,
+        rgba(255, 255, 255, 0.19) 52.74%,
+        rgba(255, 255, 255, 0) 74.46%
+      ),
+      url("./../images/hero-section-background@2x.jpg");
+  }
+
   &__title {
     font-size: 12px;
     font-weight: 400;
