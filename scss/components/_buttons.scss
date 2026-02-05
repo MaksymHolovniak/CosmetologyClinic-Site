@@ -1,9 +1,14 @@
+@use "../utils";
+
 .main-button {
-  padding: 14px 32px;
+  padding: 10px 24px;
   background-color: var(--color-primary-light);
   border: 2px solid var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 600;
   color: #ffffff;
-  border-radius: 32px;
+  border-radius: 24px;
+  margin: 0 auto;
   transition:
     background-color 0.3s,
     color 0.3s;
@@ -12,31 +17,42 @@
     color: var(--color-primary-dark);
     background-color: transparent;
   }
+
+  @media (min-width: utils.$bp-tablet) {
+    font-size: 18px;
+    margin: 0;
+    padding: 14px 32px;
+    border-radius: 32px;
+  }
 }
 
 .carousel-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-  fill: var(--color-primary-dark);
-  border: 1px solid var(--color-primary-dark);
-  transition:
-    background-color 0.3s,
-    border-color 0.3s,
-    fill 0.3s;
+  display: none;
 
-  &:hover {
-    background-color: var(--color-primary-light);
-    border-color: #fff;
-    fill: #fff;
-  }
+  @media (min-width: utils.$bp-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    transition:
+      background-color 0.3s,
+      border-color 0.3s,
+      fill 0.3s;
 
-  &__next {
-    transform: rotate(180deg);
+    &:hover {
+      background-color: var(--color-primary-light);
+      border-color: #fff;
+      fill: #fff;
+    }
+
+    &__next {
+      transform: rotate(180deg);
+    }
   }
 }

@@ -1,11 +1,18 @@
+@use "../utils";
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: var(--color-primary-dark);
   background-image: url("./../images/advantages-background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 1370px;
+  background-size: cover;
+  background-position: center 470px;
+
+  @media (min-width: utils.$bp-tablet) {
+    background-size: contain;
+    background-position: center 1370px;
+  }
 }
 
 html {

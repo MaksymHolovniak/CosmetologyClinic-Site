@@ -1,33 +1,78 @@
+@use "../utils";
+
 .footer {
   position: relative;
-  padding: 56px 0;
+  padding: 32px 0 66px;
   background-color: var(--color-primary-dark);
   background-image: url("./../images/footer-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @media (min-width: utils.$bp-tablet) {
+    padding: 56px 0;
+  }
+
   &::after {
     content: "";
-    width: 245px;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url("./../images/cosmetics-products.png");
-    background-repeat: no-repeat;
+    display: none;
+
+    @media (min-width: utils.$bp-tablet) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      background-image: url("./../images/cosmetics-products.png");
+      background-repeat: no-repeat;
+    }
+
+     @media (min-width: utils.$bp-desktop) {
+      width: 245px;
+      height: 150px;
+    }
   }
 
   &__container {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width: utils.$bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 
-  &__nav,
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: utils.$bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
   &__address {
     display: flex;
-    flex-basis: 50%;
-    gap: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: utils.$bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      gap: 20px;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
@@ -47,41 +92,63 @@
     gap: 16px;
   }
 
-  &__nav-link {
-    font-size: 16px;
-    color: #fff;
-  }
-
   &__address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: none;
+
+    @media (min-width: utils.$bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__link {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
-    line-height: 1.19;
+    line-height: 1.14;
     transition: color 0.3s;
 
     &:hover {
       color: var(--color-primary-light);
+    }
+
+    @media (min-width: utils.$bp-tablet) {
+      font-size: 16px;
+      line-height: 1.19;
     }
   }
 
   &__socials {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
+
+    @media (min-width: utils.$bp-tablet) {
+      gap: 24px;
+    }
 
     &-icon {
       fill: #fff;
+      width: 32px;
+      height: 32px;
+
+      @media (min-width: utils.$bp-desktop) {
+        width: 42px;
+        height: 42px;
+      }
     }
   }
 
   &__address-copyright {
-    font-size: 13px;
-    line-height: 1.15;
+    font-size: 12px;
+    line-height: 1.5;
     color: var(--color-secondary-light);
+    text-align: center;
+
+    @media (min-width: utils.$bp-tablet) {
+      font-size: 13px;
+      line-height: 1.15;
+      text-align: left;
+    }
   }
 }

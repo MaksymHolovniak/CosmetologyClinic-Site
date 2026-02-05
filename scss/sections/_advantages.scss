@@ -1,5 +1,11 @@
+@use "../utils";
+
 .advantages-section {
-  padding: 176px 0 96px;
+  padding: 52px 0 20px;
+
+  @media (min-width: utils.$bp-tablet) {
+    padding: 176px 0 96px;
+  }
 
   &__title {
     max-width: 450px;
@@ -9,9 +15,15 @@
 
   &__list {
     display: flex;
-    gap: 56px;
+    flex-direction: column;
+    gap: 16px;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: utils.$bp-tablet) {
+      flex-direction: row;
+      gap: 56px;
+    }
   }
 
   &__item {
@@ -35,4 +47,3 @@
     fill: var(--color-primary-light);
   }
 }
-

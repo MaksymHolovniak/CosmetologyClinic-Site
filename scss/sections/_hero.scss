@@ -1,3 +1,5 @@
+@use "../utils";
+
 .hero-section {
   background-image:
     linear-gradient(
@@ -12,33 +14,64 @@
   background-size: cover;
   background-position: center top;
 
-  padding: 125px 0 125px 105px;
+  padding: 72px 0 28px;
+
+  @media (min-width: utils.$bp-tablet) {
+    padding: 125px 0 125px 105px;
+  }
 
   &__title {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     color: var(--color-primary-dark);
-    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media (min-width: utils.$bp-tablet) {
+      font-size: 18px;
+      line-height: 1.16;
+      text-align: left;
+      margin-bottom: 40px;
+    }
 
     &-accent {
       display: block;
-      max-width: 530px;
-      font-size: 140px;
+      font-size: 46px;
       font-family: "Play", sans-serif;
       color: var(--color-primary-light);
-      line-height: 0.8;
+      line-height: 0.85;
       font-weight: 700;
-      margin-top: 16px;
+
+      @media (min-width: utils.$bp-tablet) {
+        max-width: 530px;
+        font-size: 140px;
+        line-height: 0.81;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media (min-width: utils.$bp-tablet) {
+      display: block;
     }
   }
 
   &__text {
-    margin-top: 14px;
-    max-width: 238px;
-    font-size: 12px;
+    max-width: 186px;
+    font-size: 11px;
     color: var(--color-secondary-dark);
-    line-height: 1.5;
-    text-align: center;
+    line-height: 1.64;
+    margin: 8px auto 0;
+
+    @media (min-width: utils.$bp-tablet) {
+      margin: 14px 0 0;
+      max-width: 238px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
   }
 }
-

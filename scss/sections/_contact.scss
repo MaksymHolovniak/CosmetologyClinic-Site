@@ -1,35 +1,62 @@
+@use "../utils";
+
 .contact-section {
-  padding: 48px 0 96px;
+  padding-top: 20px;
+
+  @media (min-width: utils.$bp-tablet) {
+    padding: 48px 0 96px;
+  }
 
   &__title {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    @media (min-width: utils.$bp-tablet) {
+      margin-bottom: 48px;
+    }
   }
 
   &__container {
     display: flex;
-    align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
-    gap: 32px;
+    gap: 24px;
+
+    @media (min-width: utils.$bp-tablet) {
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+    }
   }
 
   &__map {
-    width: 605px;
-    height: 480px;
-    border-radius: 32px;
+    height: 230px;
+    margin: 0 -20px;
+
+    @media (min-width: utils.$bp-tablet) {
+      width: 605px;
+      height: 480px;
+      border-radius: 32px;
+      margin: 0;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    padding: 48px 56px;
+    padding: 42px 24px;
     align-items: center;
     background-color: var(--color-primary-dark);
-    border-radius: 32px;
+    border-radius: 24px;
     background-image: url("./../images/form-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media (min-width: utils.$bp-tablet) {
+      padding: 48px 56px;
+      border-radius: 32px;
+    }
   }
 
   &__form-field {

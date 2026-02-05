@@ -1,6 +1,12 @@
+@use "../utils";
+
 .section-title {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 700;
   font-family: "Play", sans-serif;
   line-height: 1.15;
+
+  @media (min-width: utils.$bp-tablet) {
+    font-size: 64px;
+  }
 }

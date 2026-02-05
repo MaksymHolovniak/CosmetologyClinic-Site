@@ -1,3 +1,5 @@
+@use '../utils';
+
 .big-star {
   position: absolute;
   top: 360px;
@@ -18,4 +20,16 @@
   top: 270px;
   right: 6px;
   fill: var(--color-secondary-light);
+}
+
+.mobile-star {
+  display: block;
+  position: absolute;
+  right: 2px;
+  bottom: -40px;
+  fill: var(--color-primary-dark);
+
+  @media (min-width: utils.$bp-tablet) {
+    display: none;
+  }
 }

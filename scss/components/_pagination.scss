@@ -1,18 +1,28 @@
+@use "../utils";
+
 .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
+
+  @media (min-width: utils.$bp-tablet) {
+    gap: 24px;
+  }
 
   &__button {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: var(--color-secondary-light);
     border-radius: 50%;
+
+    @media (min-width: utils.$bp-tablet) {
+      width: 12px;
+      height: 12px;
+    }
 
     &--active {
       background-color: var(--color-primary-light);
     }
   }
 }
-
