@@ -1,10 +1,35 @@
 @use "../utils";
 
 .advantages-section {
+  position: relative;
   padding: 52px 0 20px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 40px);
+    z-index: -1;
+    background-image: url("./../images/advantages-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-width: utils.$bp-tablet) {
+      top: -60px;
+      height: calc(100% + 60px);
+    }
+
+    @media (min-width: utils.$bp-desktop) {
+      top: -120px;
+      height: calc(100% + 120px);
+    }
+  }
+
   @media (min-width: utils.$bp-tablet) {
-    padding: 176px 0 96px;
+    padding: 88px 0 48px;
   }
 
   &__title {

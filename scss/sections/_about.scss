@@ -4,7 +4,7 @@
   padding: 28px 0 52px;
 
   @media (min-width: utils.$bp-tablet) {
-    padding: 96px 0 0;
+    padding: 96px 0 88px;
   }
   &__container {
     display: flex;
@@ -28,6 +28,9 @@
     @media (min-width: utils.$bp-tablet) {
       flex-shrink: 0;
       gap: 40px;
+    }
+
+    @media (min-width: utils.$bp-desktop) {
       padding: 40px 0 200px;
     }
   }
